@@ -1,0 +1,34 @@
+<ion-content>
+  <div class="front ion-padding">
+    <ion-grid>
+      <ion-row>
+        <ion-col class="ion-text-right ion-padding-left ion-padding-right">
+          <ion-button class="top-button" margin-top size="small" shape="round" color="softlight">SIGN IN </ion-button>
+        </ion-col>
+        <ion-col class="ion-text-left ion-padding-left ion-padding-right">
+          <ion-button class="top-button" margin-top size="small" shape="round" color="softlight">SIGN UP </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid class="input">
+      <ion-row>
+        <ion-col>
+          <ion-item margin-top>
+            <ion-input type="text"  mode="md" [ngModel]="name" placeholder="Name"></ion-input>
+          </ion-item>
+          <ion-item margin-top>
+            <ion-input type="email"  mode="md" [ngModel]="email" placeholder="Email"></ion-input>
+          </ion-item>
+          <ion-item margin-top>
+            <ion-input type="password"  mode="md" [ngModel]="password" placeholder="Password"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-button class="continue-button ion-margin-top" size="large" shape="round" expand="full" color="tertiary"
+      margin-bottom margin-top>CONTINUE
+    </ion-button>
+  </div>
+  <div class="background">
+  </div>
+</ion-content>

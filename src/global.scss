@@ -1,0 +1,68 @@
+// http://ionicframework.com/docs/theming/
+@import "~@ionic/angular/css/core.css";
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+//Header Radius Style
+:root {
+  --theme-header-border-bottom-left-radius: 80px;
+  --theme-header-border-bottom-right-radius: 0px;
+}
+
+//Override the default "padding" if present in ion-content tag
+ion-content[padding] {
+  --padding-start: 24px !important;
+  --padding-end: 24px !important;
+}
+
+#menu-header {
+  background-image: url(/assets/img/street.jpg);
+  border-bottom-left-radius: 80px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 20px;
+
+  p {
+    color: white !important;
+  }
+
+  #avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+  }
+
+  #header-over {
+    background-color: rgba(36, 19, 50, 0.3); //Primary dark color
+    border-bottom-left-radius: 80px;
+    padding: 40px;
+
+    h2 {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      padding-top: 15px;
+    }
+  }
+}
+
+ion-list#menu-list {
+  padding-left: 25px !important;
+}
+
+@import "src/theme/headers.scss";
+
+@import "src/theme/posts.scss";
+
+
+//Choose your font family by activating one of these three
+@import "src/theme/font-montserrat.scss";
+//@import "src/theme/font-opensans.scss";
+//@import "src/theme/font-inconsolata.scss";

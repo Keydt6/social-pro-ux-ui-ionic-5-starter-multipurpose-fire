@@ -1,0 +1,13 @@
+Title: Social Theme
+Author: ionic4themes
+Contact: info@ionic4themes.com
+---------
+
+## 5.0.0 - 2020-06-11
+- Migrated to Ionic 5
+- HTML tags and some upgrading issues solved
+- Minor changes in some icons
+
+## 1.0.0 - 2019-10-19
+### Added
+- Initial release

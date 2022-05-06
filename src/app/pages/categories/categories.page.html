@@ -1,0 +1,49 @@
+<ion-header class="header-dark ion-no-border" mode="md">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon mode="ios" size="large" name="arrow-back-outline"></ion-icon>
+        <!--<ion-back-button mode="ios"></ion-back-button>-->
+      </ion-button>
+    </ion-buttons>
+    <ion-title mode="md">Categories</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="search"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+
+  <ion-grid class="ion-no-padding filter">
+    <ion-row>
+      <ion-col size="auto">
+        <ion-button class="top-button " size="small" shape="round" color="tertiary">TODAY</ion-button>
+      </ion-col>
+      <ion-col size="auto">
+        <ion-button class="top-button " size="small" shape="round" fill="clear">WEEK</ion-button>
+      </ion-col>
+      <ion-col size="auto">
+        <ion-button class="top-button " size="small" shape="round" fill="clear">MONTH</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-header>
+
+<ion-content class="ion-no-padding ion-padding-top" fullscreen>
+
+  <div class="post-circular" *ngFor="let categorie of categories">
+    <ion-grid class="ion-padding post-border-img" [ngStyle]="{'background-image': 'url(' + categorie.image + ')'}">
+      <ion-row>
+        <ion-col>
+          <ion-item class="ion-no-padding" lines="none">
+            <ion-label>
+              <h2>{{categorie.name}}</h2>
+            </ion-label>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

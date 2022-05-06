@@ -1,0 +1,37 @@
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="categorieses"></ion-back-button>
+      </ion-buttons>
+      <ion-title>
+        Categories
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <form [formGroup]="categoriesForm" (ngSubmit)="submit()">
+    <ion-item>
+        <ion-label position="stacked">Name</ion-label>
+        <ion-input formControlName="name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Image</ion-label>
+        <ion-input formControlName="image"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Z Index</ion-label>
+        <ion-input formControlName="zIndex"></ion-input>
+      </ion-item>
+      
+      <ion-button type="submit" expand="block" class="ion-padding-horizontal ion-margin-vertical"
+      [disabled]="!categoriesForm.valid">
+        Save
+      </ion-button>
+
+      <ion-button *ngIf="id" (click)="delete()" type="button" expand="block" class="ion-padding-horizontal ion-margin-vertical" color="danger">
+        Delete
+      </ion-button>
+    </form>
+  </ion-content>
+  

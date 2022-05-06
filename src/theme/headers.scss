@@ -1,0 +1,58 @@
+.header-normal {
+    border-bottom-left-radius: var(--theme-header-border-bottom-left-radius); //defined in global.scss
+    border-bottom-right-radius: var(--theme-header-border-bottom-right-radius); //defined in global.scss
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgrey;
+    background: rgba(255, 255, 255, 0.9); //White transparent
+  
+    ion-toolbar {
+      height: 70px;
+      margin-top: 55px; //Balanced between notch space in Iphone X and other devices without notch
+      --background: transparent !important;
+      --ion-color-base: transparent !important;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  
+    ion-title {
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+      line-height: 30px;
+    }
+  
+    ion-button {
+      color: var(--ion-color-dark);
+    }
+  }
+  
+  .header-dark {
+    border-bottom-left-radius: var(--theme-header-border-bottom-left-radius); //defined in global.scss
+    border-bottom-right-radius: var(--theme-header-border-bottom-right-radius); //defined in global.scss
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--ion-color-softdark);
+    background: var(--ion-color-primary-dark);
+  
+    ion-toolbar {
+      height: 70px;
+      margin-top: 55px; //Balanced between notch space in Iphone X and other devices without notch
+      --background: transparent !important;
+      --ion-color-base: transparent !important;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  
+    ion-title{
+      color: white;
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+      line-height: 30px;
+    }
+  
+    ion-button {
+      color: white;
+    }
+  }

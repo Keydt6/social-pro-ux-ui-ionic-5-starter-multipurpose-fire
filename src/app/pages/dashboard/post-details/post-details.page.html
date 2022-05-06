@@ -1,0 +1,49 @@
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="posts"></ion-back-button>
+      </ion-buttons>
+      <ion-title>
+        Post
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <form [formGroup]="postForm" (ngSubmit)="submit()">
+    <ion-item>
+        <ion-label position="stacked">Author Name</ion-label>
+        <ion-input formControlName="authorName"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Author Image</ion-label>
+        <ion-input formControlName="authorImage"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Released</ion-label>
+        <ion-datetime displayFormat="MM DD YYYY" placeholder="Select Date" formControlName="release_date"></ion-datetime> 
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Likes</ion-label>
+        <ion-input formControlName="likes" type="number"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Comments</ion-label>
+        <ion-input formControlName="comments" type="number"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Content</ion-label>
+        <ion-input formControlName="content"></ion-input>
+      </ion-item>
+      
+      <ion-button type="submit" expand="block" class="ion-padding-horizontal ion-margin-vertical"
+      [disabled]="!postForm.valid">
+        Save
+      </ion-button>
+
+      <ion-button *ngIf="id" (click)="delete()" type="button" expand="block" class="ion-padding-horizontal ion-margin-vertical" color="danger">
+        Delete
+      </ion-button>
+    </form>
+  </ion-content>
+  

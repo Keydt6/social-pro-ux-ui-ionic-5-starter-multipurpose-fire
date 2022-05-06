@@ -1,0 +1,35 @@
+#slider {
+    border-bottom-left-radius: 80px !important;
+    border-top-right-radius: 80px !important;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#intro{
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 300;
+    color: #767676;
+    text-align: left;
+}
+
+.round {
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+    --box-shadow: none;
+}
+
+ion-slides {
+    --bullet-background: var(--ion-color-secondary);
+    --bullet-background-active: var(--ion-color-primary);
+}
+
+//avoid scrolling effects
+ion-content {
+    --overflow: hidden;
+    --padding-top: 64px;
+}

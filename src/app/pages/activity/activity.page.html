@@ -1,0 +1,87 @@
+<ion-header class="header-normal ion-no-border" mode="md">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon mode="ios" size="large" name="arrow-back-outline"></ion-icon>
+        <!--<ion-back-button mode="ios"></ion-back-button>-->
+      </ion-button>
+    </ion-buttons>
+    <ion-title mode="md">Activity</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="search"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-no-padding ion-padding-top" fullscreen>
+
+
+  <!--First post-->
+
+  <ng-container *ngFor="let post of posts;  let i=index">
+    <ion-grid class="post-bordered-white ion-no-margin" *ngIf="i<1">
+      <ion-row>
+        <ion-item class="ion-no-padding" lines="none">
+          <ion-avatar slot="start">
+            <ion-img [src]="post.authorImage"></ion-img>
+          </ion-avatar>
+          <ion-label>
+            <h2>{{post.authorName}}</h2>
+            <p>{{post.release_date  | date : 'dd/MM/y' }}</p>
+          </ion-label>
+        </ion-item>
+        <p class="body">{{post.content}}</p>
+        <div class="stats">
+          {{post.likes}} <ion-icon name="heart" style="margin-right: 10px;"></ion-icon>
+          {{post.comments}} <ion-icon name="chatbox"></ion-icon>
+        </div>
+      </ion-row>
+    </ion-grid>
+  </ng-container>
+
+
+
+  <!--Gallery-->
+
+  <div class="post-border-gallery">
+    <div class="scrolling-wrapper">
+      <div class="card" *ngFor="let item of gallery">
+        <div [ngStyle]="{'background-image': 'url(' + item.image + ')'}" class="image-container">
+          <div class="titles">
+            <h2>{{item.name}}</h2>
+            <div class="rating">
+              {{item.rate}} <ion-icon name="star"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Last posts-->
+
+  <div class="post-list" *ngFor="let post of posts ;  let i=index">
+    <ion-grid *ngIf="i>0" class="post-bordered-white ion-padding-top ion-no-margin">
+      <ion-row>
+        <ion-item class="ion-no-padding ion-margin-top" lines="none">
+          <ion-avatar slot="start">
+            <ion-img [src]="post.authorImage"></ion-img>
+          </ion-avatar>
+          <ion-label>
+            <h2>{{post.authorName}}</h2>
+            <p>{{post.release_date  | date : 'dd/MM/y' }}</p>
+          </ion-label>
+        </ion-item>
+        <p class="body">{{post.content}}</p>
+        <div class="stats">
+          {{post.likes}} <ion-icon name="heart" style="margin-right: 10px;"></ion-icon>
+          {{post.comments}} <ion-icon name="chatbox"></ion-icon>
+        </div>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+
+</ion-content>

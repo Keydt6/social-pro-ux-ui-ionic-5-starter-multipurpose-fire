@@ -1,0 +1,56 @@
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  bottom: 50%;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  padding-right: 25% !important;
+  padding-left: 25% !important;
+  width: 100%;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  #login {
+    margin-top: 30px;
+    background-color: var(--ion-color-grayblue);
+    border-top-left-radius: 80px;
+    padding: 25px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9em;
+  }
+  #signup-background {
+    background-color: var(--ion-color-grayblue);
+  }
+  #signup {
+    background-color: var(--ion-color-primary-dark);
+    border-top-left-radius: 80px;
+    padding: 25px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9em;
+  }
+}
+
+//avoid scrolling effects
+ion-content {
+  --overflow: hidden;
+}

@@ -1,0 +1,57 @@
+ion-content {
+    --ion-background-color: var(--ion-color-softlight);
+}
+
+ion-input {
+    --color: var(--ion-color-graymed);
+    --placeholder-font-weight: 400;
+    --background: white;
+}
+
+ion-item {
+    --background: white;
+    --padding-start: 0px;
+}
+
+//Grid area with input elements
+.input {
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    border-radius: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+}
+
+//Sign in and Sign up top buttons
+.top-button {
+    height: 32px;
+    --border-radius: 50px;
+    --box-shadow: none; //--vertical-align: middle;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.continue-button {
+    height: 55px;
+    --border-radius: 50px;
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+    --box-shadow: none; //--vertical-align: middle;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+.front {
+    position: relative;
+    z-index: 20;
+}
+
+.background {
+    height: 300px;
+    background-color: var(--ion-color-tertiary);
+    border-bottom-left-radius: 80px;
+    margin-top: -540px;
+}

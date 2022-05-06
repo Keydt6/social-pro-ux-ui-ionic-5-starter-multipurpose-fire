@@ -1,0 +1,31 @@
+<ion-content class="ion-padding" scrollX=false>
+  <ion-slides id="slider" pager="true">
+    <ion-slide>
+      <ion-img src="/assets/img/slidea.jpg"></ion-img>
+    </ion-slide>
+    <ion-slide>
+      <ion-img src="/assets/img/slideb.jpg"></ion-img>
+    </ion-slide>
+    <ion-slide>
+      <ion-img src="/assets/img/slidec.jpg"></ion-img>
+    </ion-slide>
+    <ion-slide>
+      <ion-img src="/assets/img/slided.jpg"></ion-img>
+    </ion-slide>
+  </ion-slides>
+  <div class="ion-padding-top ion-margin-top">
+    <h1>Welcome</h1>
+    <p id="intro">When I was 5 years old, my mother always told me that happiness was the key to life. When I went to
+      school, they
+      asked me what I wanted to be when I grew up. </p>
+  </div>
+</ion-content>
+
+<ion-footer class="ion-text-right ion-padding ion-no-border">
+  <ion-button class="round" shape="round" color="secondary" (click)="presentToast()">
+    <ion-icon name="arrow-back"></ion-icon>
+  </ion-button>
+  <ion-button class="round" shape="round" color="tertiary" (click)="presentToast()">
+    <ion-icon name="arrow-forward"></ion-icon>
+  </ion-button>
+</ion-footer>

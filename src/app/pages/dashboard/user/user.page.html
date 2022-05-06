@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Users
+    </ion-title>
+    <ion-icon class="ion-margin-end" size="large" name="logo-firebase" slot="end"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let item of items | async" [routerLink]="[item.id]">
+      <ion-label class="ion-text-wrap">
+        {{ item.first_name }}<br>{{ item.last_name }}<br>{{ item.followers }}<br>{{ item.photosTotal }}<br>{{ item.photo1 }}<br>{{ item.photo2 }}<br>{{ item.photo3 }}<br>{{ item.email }}<br>{{ item.profileMainPhoto }}<br>{{ item.profileMainPhoto2 }}<br>
+        <!-- <p>{{ item.id }}</p> -->
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button [routerLink]="['null']">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

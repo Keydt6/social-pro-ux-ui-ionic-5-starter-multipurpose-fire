@@ -1,0 +1,30 @@
+<ion-content class="ion-padding">
+  
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-text-right ion-padding">
+        <ion-button class="top-button ion-margin-top" size="small" shape="round" color="tertiary">SIGN
+          IN </ion-button>
+      </ion-col>
+      <ion-col class="ion-text-left ion-padding">
+        <ion-button class="top-button ion-margin-top" size="small" shape="round" fill="clear">SIGN
+          UP </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-item class="ion-margin-top">
+    <ion-input mode="md" [ngModel]="email" type="email" placeholder="Email"></ion-input>
+  </ion-item>
+
+  <ion-item class="ion-margin-top">
+    <ion-input  mode="md" [ngModel]="password" type="password" placeholder="Password"></ion-input>
+  </ion-item>
+
+  <ion-button class="continue-button ion-margin-top ion-margin-bottom" size="large" shape="round" expand="full"
+    color="tertiary">CONTINUE
+  </ion-button>
+
+  <p id="forgot">FORGOT PASSWORD</p>
+ 
+</ion-content>

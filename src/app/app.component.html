@@ -1,0 +1,36 @@
+<ion-app>
+  <ion-menu contentId="content" side="start">
+    <ion-content>
+      <div id="menu-header">
+        <div id="header-over">
+          <img id="avatar" src="/assets/img/user3.jpg" alt="Smiley face">
+          <ion-label>
+            <h2>Erika Young</h2>
+            <p>@erikayoung</p>
+          </ion-label>
+        </div>
+      </div>
+      <ion-list id="menu-list">
+        <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
+          <ion-item lines="none" [routerDirection]="'root'" [routerLink]="[p.url]">
+            <ion-label>
+              {{p.title}}
+            </ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
+
+        <ion-menu-toggle auto-hide="false" *ngFor="let p of firebasePages">
+          <ion-item lines="none" [routerDirection]="'root'" [routerLink]="[p.url]">
+            <ion-icon class="ion-margin-end" [style.color]="'#FFCB2F'" name="logo-firebase" slot="end"></ion-icon>
+            <ion-label>
+              {{p.title}}
+            </ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="content" main></ion-router-outlet>
+</ion-app>

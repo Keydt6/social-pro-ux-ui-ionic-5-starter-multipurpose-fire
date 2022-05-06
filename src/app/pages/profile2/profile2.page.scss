@@ -1,0 +1,88 @@
+#hero {
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .bio {
+        padding-top: 230px;
+
+        text-align: center;
+
+        #subtitle {
+            color: #A3A9AF;
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 0px;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0px;
+            padding: 0px;
+            color: white;
+        }
+
+    }
+}
+
+#footer {
+    position: absolute;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top: -40px;
+    background-color: white;
+    width: 100%;
+    padding-top: 24px;
+
+    #title {
+        font-weight: 600;
+        font-size: 16px;
+        text-align: center;
+        padding-top: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+
+    #desc {
+        font-weight: 300;
+        font-size: 12px;
+        text-align: center;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+
+   
+    #left-img {
+        height: 316px;
+        border-top-left-radius: 40px;
+        border-bottom-left-radius: 40px;
+        background-size: cover;
+        background-position: center;
+        margin-right: 8px;
+    }
+
+    #top-right-img {
+        height: 150px;
+        border-top-right-radius: 40px;
+        margin-bottom: 8px;
+        background-size: cover;
+        background-position: center;
+        margin-left: 8px;
+
+    }
+
+    #bottom-right-img {
+        height: 150px;
+        border-bottom-right-radius: 40px;
+        margin-top: 8px;
+        background-size: cover;
+        background-position: center;
+        margin-left: 8px;
+
+    }
+
+}

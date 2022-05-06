@@ -1,0 +1,147 @@
+//Header style is defined in global.scss
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--ion-color-primary-dark);
+}
+
+p {
+  color: var(--ion-color-violetsoft);
+}
+
+ion-avatar {
+  margin-right: 16px;
+}
+
+.post-border-white {
+  border-bottom-left-radius: 80px !important;
+  padding-top: 0px !important;
+  padding-left: 30px !important;
+  padding-right: 30px;
+  padding-top: 0px !important;
+  padding-left: 30px !important;
+  padding-right: 30px;
+  padding-top: 90px !important;
+  margin-top: -90px !important;
+  position: relative;
+  position: relative;
+  background: white;
+
+  p.body {
+    font-size: 13px;
+    color: var(--ion-color-violetsoft);
+    font-weight: 400;
+    line-height: 2em;
+    margin-top: 5px;
+  }
+
+  ion-item {
+    --background: transparent !important;
+  }
+
+  .post-img-rounded {
+    border-radius: 10px 40px 10px 40px;
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    height: 105px;
+    width: 100%;
+  }
+}
+
+.post-border-img {
+  border-bottom-left-radius: 80px !important;
+  padding-bottom: 40px !important;
+  padding-left: 30px !important;
+  padding-top: 90px !important;
+  margin-top: -80px !important;
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  height: 330px;
+  width: 100%;
+
+  h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+  }
+
+  p {
+    color: white;
+  }
+
+  p.body {
+    font-size: 1em;
+    color: #f0d1df;
+    font-weight: 300;
+    line-height: 2em;
+    margin-top: 5px;
+  }
+
+  ion-item {
+    --background: transparent !important;
+  }
+}
+
+.post-border-last {
+  padding-top: 0px !important;
+  padding-bottom: 30px !important;
+  padding-left: 30px !important;
+  padding-right: 30px;
+  background: white;
+
+  p.body {
+    font-size: 13px;
+    color: var(--ion-color-violetsoft);
+    font-weight: 400;
+    line-height: 2em;
+    margin-top: 5px;
+  }
+
+  ion-item {
+    --background: transparent !important;
+  }
+}
+
+.stats {
+  color: var(--ion-color-graymed);
+  bottom: 0px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  font-size: 0.75em;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  text-align: right;
+  margin-left: auto;
+  margin-right: 0;
+
+  ion-icon {
+    font-size: 25px;
+    vertical-align: middle;
+    color: var(--ion-color-graylight);
+  }
+}
+
+.stats-white {
+  color: white;
+  bottom: 0px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  font-size: 0.75em;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  text-align: right;
+  margin-left: auto;
+  margin-right: 0;
+  padding-top: 130px;
+
+  ion-icon {
+    font-size: 25px;
+    vertical-align: middle;
+    color: white;
+  }
+}

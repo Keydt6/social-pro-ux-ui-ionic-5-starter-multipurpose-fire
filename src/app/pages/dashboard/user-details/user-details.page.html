@@ -1,0 +1,65 @@
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="users"></ion-back-button>
+      </ion-buttons>
+      <ion-title>
+        User
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <form [formGroup]="userForm" (ngSubmit)="submit()">
+    <ion-item>
+        <ion-label position="stacked">First Name</ion-label>
+        <ion-input formControlName="first_name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Last Name</ion-label>
+        <ion-input formControlName="last_name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Followers</ion-label>
+        <ion-input formControlName="followers" type="number"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Photos and Videos</ion-label>
+        <ion-input formControlName="photosTotal" type="number"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Photo One</ion-label>
+        <ion-input formControlName="photo1"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Photo Two</ion-label>
+        <ion-input formControlName="photo2"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Photo Three</ion-label>
+        <ion-input formControlName="photo3"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Email</ion-label>
+        <ion-input formControlName="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Main Profile Photo 1</ion-label>
+        <ion-input formControlName="profileMainPhoto"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Main Profile Photo 2</ion-label>
+        <ion-input formControlName="profileMainPhoto2"></ion-input>
+      </ion-item>
+      
+      <ion-button type="submit" expand="block" class="ion-padding-horizontal ion-margin-vertical"
+      [disabled]="!userForm.valid">
+        Save
+      </ion-button>
+
+      <ion-button *ngIf="id" (click)="delete()" type="button" expand="block" class="ion-padding-horizontal ion-margin-vertical" color="danger">
+        Delete
+      </ion-button>
+    </form>
+  </ion-content>
+  

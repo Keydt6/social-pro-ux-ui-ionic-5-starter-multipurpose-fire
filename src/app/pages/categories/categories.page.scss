@@ -1,0 +1,48 @@
+//Header style is defined in global.scss
+
+.post-border-img {
+  //border-bottom-left-radius: 80px !important;
+  border-top-right-radius: 80px !important;
+  padding-bottom: 20px !important;
+  //padding-left: 30px !important;
+  padding-top: 40px !important;
+  margin-top: -50px !important;
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  height: 230px;
+  width: 100%;
+
+  h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+  }
+
+  ion-item {
+    --background: transparent !important;
+  }
+}
+
+.filter{
+
+   padding-left: 37px !important;
+   padding-bottom: 30px !important;
+
+   ion-button{
+    --padding-start: 15px;
+    --padding-end: 15px;
+   }
+   
+.top-button {
+    height: 32px;
+    --border-radius: 50px;
+    --box-shadow: none; //--vertical-align: middle;
+    font-size: 12px;
+  }
+
+}
+
+
+
+

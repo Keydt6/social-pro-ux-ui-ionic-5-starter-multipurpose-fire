@@ -1,0 +1,56 @@
+ion-content {
+  --background: #352641 url("/assets/img/user4.jpg") no-repeat center center / cover;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0%;
+  #login {
+    margin-top: 30px;
+    background-color: var(--ion-color-grayblue);
+    border-top-left-radius: 80px;
+    padding: 25px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9em;
+  }
+  #signup-background {
+    background-color: var(--ion-color-grayblue);
+  }
+  #signup {
+    background-color: var(--ion-color-primary-dark);
+    border-top-left-radius: 80px;
+    padding: 25px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9em;
+  }
+  h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    padding-right: 20%;
+    padding-left: 20%;
+    padding-bottom: 20px;
+  }
+  #intro {
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    padding-right: 15%;
+    padding-left: 15%;
+    padding-bottom: 20px;
+    line-height: 20px;
+  }
+}
+
+//avoid scrolling effects
+ion-content {
+  --overflow: hidden;
+}

@@ -1,0 +1,44 @@
+<ion-header class="header-normal ion-no-border" mode="md">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon mode="ios" size="large" name="arrow-back-outline"></ion-icon>
+        <!--<ion-back-button mode="ios"></ion-back-button>-->
+      </ion-button>
+    </ion-buttons>
+    <ion-title mode="md">Feeds Video</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="funnel"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-no-padding ion-padding-top" fullscreen>
+  <div class="cards-list" *ngFor="let post of postfeed">
+    <ion-grid class="ion-no-margin" class="post-bordered-video">
+      <video autoplay muted loop [src]=post.video></video>
+      <ion-row>
+        <ion-col class="ion-no-padding">
+          <div class="stats">
+            {{post.likes}} <ion-icon name="heart"></ion-icon>
+            {{post.comments}} <ion-icon name="chatboxes"></ion-icon>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row class="author-row">
+        <ion-col>
+          <ion-item class="ion-margin-left ion-padding-left" lines="none">
+            <ion-avatar slot="start">
+              <ion-img [src]=post.avatar></ion-img>
+            </ion-avatar>
+            <ion-label>
+              <h2>{{post.author}}</h2>
+              <p>{{post.date}}</p>
+            </ion-label>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

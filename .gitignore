@@ -1,0 +1,26 @@
+.vscode/
+node_modules/
+plugins/
+*.mode1v3
+*.perspectivev3
+*.pbxuser
+platforms/
+desktop.ini
+
+# misc
+.angular/cache
+/.angular/cache
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# System Files
+.DS_Store
+Thumbs.db
+
+/
